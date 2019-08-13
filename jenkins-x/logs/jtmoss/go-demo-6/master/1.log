@@ -1,0 +1,44 @@
+Step: step-credential-initializer-smm47:
+
+{"level":"warn","ts":1565718180.417281,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565718180.4191525,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: step-working-dir-initializer-l59cp:
+
+{"level":"warn","ts":1565718181.5479202,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1565718181.5490386,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+Step: step-place-tools:
+
+Step: step-git-source-meta-jtmoss-go-demo-6-master-7l2jh:
+
+{"level":"warn","ts":1565718187.8308532,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565718188.255922,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jtmoss/go-demo-6.git @ 1591af57cd81fa782b10c7221cdddc5c34874bcf in path /workspace/source"}
+Step: step-git-merge:
+
+{"level":"info","msg":"Using SHAs from PULL_REFS=master:1591af57cd81fa782b10c7221cdddc5c34874bcf","time":"2019-08-13T17:43:09Z"}
+{"level":"warning","msg":"no SHAs to merge, falling back to initial cloned commit","time":"2019-08-13T17:43:09Z"}
+Step: step-merge-pull-refs:
+
+SKIP merge-pull-refs: Nothing to merge
+Step: step-create-effective-pipeline:
+
+{"level":"info","msg":"Deleting and cloning the Jenkins X versions repo","time":"2019-08-13T17:43:09Z"}
+{"level":"info","msg":"Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.jx/jenkins-x-versions","time":"2019-08-13T17:43:09Z"}
+{"level":"info","msg":"Effective pipeline written to jenkins-x-effective.yml","time":"2019-08-13T17:43:11Z"}
+Step: step-create-tekton-crds:
+
+{"level":"info","msg":"running command: echo \\$(jx-release-version) \u003e VERSION","time":"2019-08-13T17:43:12Z"}
+{"level":"info","msg":"","time":"2019-08-13T17:43:14Z"}
+{"level":"info","msg":"running command: jx step tag --version \\$(cat VERSION)","time":"2019-08-13T17:43:14Z"}
+{"level":"info","msg":"Updating chart version in charts/go-demo-6/Chart.yaml to 1.0.338","time":"2019-08-13T17:43:14Z"}
+{"level":"info","msg":"Updating repository in charts/go-demo-6/values.yaml to 10.27.249.112:5000/jtmoss/go-demo-6","time":"2019-08-13T17:43:14Z"}
+{"level":"info","msg":"Updating tag in charts/go-demo-6/values.yaml to 1.0.338","time":"2019-08-13T17:43:14Z"}
+{"level":"info","msg":"Tag v1.0.338 created and pushed to remote origin","time":"2019-08-13T17:43:17Z"}
+{"level":"info","msg":"","time":"2019-08-13T17:43:17Z"}
+{"level":"warning","msg":"failed to find secret kaniko-secret in namespace *********: secrets \"kaniko-secret\" not found","time":"2019-08-13T17:43:17Z"}
+{"level":"info","msg":"PipelineActivity for jtmoss-go-demo-6-master-1","time":"2019-08-13T17:43:17Z"}
+{"level":"info","msg":"Applying changes ","time":"2019-08-13T17:43:17Z"}
+{"level":"info","msg":"upserted PipelineResource jtmoss-go-demo-6-master for the git repository https://github.com/jtmoss/go-demo-6.git and branch master","time":"2019-08-13T17:43:17Z"}
+{"level":"info","msg":"upserted Task jtmoss-go-demo-6-master-from-build-pack-1","time":"2019-08-13T17:43:17Z"}
+{"level":"info","msg":"upserted Pipeline jtmoss-go-demo-6-master-1","time":"2019-08-13T17:43:17Z"}
+{"level":"info","msg":"created PipelineRun jtmoss-go-demo-6-master-1","time":"2019-08-13T17:43:17Z"}
+{"level":"info","msg":"created PipelineStructure jtmoss-go-demo-6-master-1","time":"2019-08-13T17:43:17Z"}
