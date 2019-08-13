@@ -1,44 +1,111 @@
-Step: step-credential-initializer-smm47:
+Step: step-credential-initializer-cs6cm:
 
-{"level":"warn","ts":1565718180.417281,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1565718180.4191525,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
-Step: step-working-dir-initializer-l59cp:
+{"level":"warn","ts":1565726142.2333283,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565726142.234087,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: step-working-dir-initializer-55cfj:
 
-{"level":"warn","ts":1565718181.5479202,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1565718181.5490386,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+{"level":"warn","ts":1565726142.5689578,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1565726142.5706441,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/charts/go-demo-6\""}
 Step: step-place-tools:
 
-Step: step-git-source-meta-jtmoss-go-demo-6-master-7l2jh:
+Step: step-git-source-******-go-demo-6-master-dkgl4:
 
-{"level":"warn","ts":1565718187.8308532,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1565718188.255922,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jtmoss/go-demo-6.git @ 1591af57cd81fa782b10c7221cdddc5c34874bcf in path /workspace/source"}
+{"level":"warn","ts":1565726150.781593,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565726151.144139,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/******/go-demo-6.git @ v1.0.343 in path /workspace/source"}
 Step: step-git-merge:
 
-{"level":"info","msg":"Using SHAs from PULL_REFS=master:1591af57cd81fa782b10c7221cdddc5c34874bcf","time":"2019-08-13T17:43:09Z"}
-{"level":"warning","msg":"no SHAs to merge, falling back to initial cloned commit","time":"2019-08-13T17:43:09Z"}
-Step: step-merge-pull-refs:
+WARNING: no SHAs to merge, falling back to initial cloned commit
+Step: step-setup-jx-git-credentials:
 
-SKIP merge-pull-refs: Nothing to merge
-Step: step-create-effective-pipeline:
+Generated Git credentials file /workspace/xdg_config/git/credentials
+Step: step-build-make-build:
 
-{"level":"info","msg":"Deleting and cloning the Jenkins X versions repo","time":"2019-08-13T17:43:09Z"}
-{"level":"info","msg":"Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.jx/jenkins-x-versions","time":"2019-08-13T17:43:09Z"}
-{"level":"info","msg":"Effective pipeline written to jenkins-x-effective.yml","time":"2019-08-13T17:43:11Z"}
-Step: step-create-tekton-crds:
+go: finding github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910
+go: finding github.com/matttproud/golang_protobuf_extensions v1.0.1
+go: finding github.com/stretchr/objx v0.1.1
+go: finding github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
+go: finding github.com/prometheus/common v0.0.0-20181126121408-4724e9255275
+go: finding github.com/golang/protobuf v1.2.0
+go: finding github.com/pmezard/go-difflib v1.0.0
+go: finding github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
+go: finding github.com/stretchr/testify v1.2.2
+go: finding gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
+go: finding github.com/prometheus/client_golang v0.9.2
+go: finding github.com/davecgh/go-spew v1.1.1
+go: finding golang.org/x/sync v0.0.0-20181108010431-42b317875d0f
+go: finding golang.org/x/net v0.0.0-20181201002055-351d144fa1fc
+go: downloading github.com/prometheus/client_golang v0.9.2
+go: downloading gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
+go: extracting github.com/prometheus/client_golang v0.9.2
+go: downloading github.com/prometheus/common v0.0.0-20181126121408-4724e9255275
+go: downloading github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
+go: downloading github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
+go: downloading github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910
+go: downloading github.com/golang/protobuf v1.2.0
+go: extracting github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
+go: extracting github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910
+go: extracting gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
+go: extracting github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
+go: extracting github.com/prometheus/common v0.0.0-20181126121408-4724e9255275
+go: downloading github.com/matttproud/golang_protobuf_extensions v1.0.1
+go: extracting github.com/matttproud/golang_protobuf_extensions v1.0.1
+go: extracting github.com/golang/protobuf v1.2.0
+CGO_ENABLED=0 GO15VENDOREXPERIMENT=1 go build -ldflags '' -o bin/go-demo-6 main.go
+Step: step-build-container-build:
 
-{"level":"info","msg":"running command: echo \\$(jx-release-version) \u003e VERSION","time":"2019-08-13T17:43:12Z"}
-{"level":"info","msg":"","time":"2019-08-13T17:43:14Z"}
-{"level":"info","msg":"running command: jx step tag --version \\$(cat VERSION)","time":"2019-08-13T17:43:14Z"}
-{"level":"info","msg":"Updating chart version in charts/go-demo-6/Chart.yaml to 1.0.338","time":"2019-08-13T17:43:14Z"}
-{"level":"info","msg":"Updating repository in charts/go-demo-6/values.yaml to 10.27.249.112:5000/jtmoss/go-demo-6","time":"2019-08-13T17:43:14Z"}
-{"level":"info","msg":"Updating tag in charts/go-demo-6/values.yaml to 1.0.338","time":"2019-08-13T17:43:14Z"}
-{"level":"info","msg":"Tag v1.0.338 created and pushed to remote origin","time":"2019-08-13T17:43:17Z"}
-{"level":"info","msg":"","time":"2019-08-13T17:43:17Z"}
-{"level":"warning","msg":"failed to find secret kaniko-secret in namespace *********: secrets \"kaniko-secret\" not found","time":"2019-08-13T17:43:17Z"}
-{"level":"info","msg":"PipelineActivity for jtmoss-go-demo-6-master-1","time":"2019-08-13T17:43:17Z"}
-{"level":"info","msg":"Applying changes ","time":"2019-08-13T17:43:17Z"}
-{"level":"info","msg":"upserted PipelineResource jtmoss-go-demo-6-master for the git repository https://github.com/jtmoss/go-demo-6.git and branch master","time":"2019-08-13T17:43:17Z"}
-{"level":"info","msg":"upserted Task jtmoss-go-demo-6-master-from-build-pack-1","time":"2019-08-13T17:43:17Z"}
-{"level":"info","msg":"upserted Pipeline jtmoss-go-demo-6-master-1","time":"2019-08-13T17:43:17Z"}
-{"level":"info","msg":"created PipelineRun jtmoss-go-demo-6-master-1","time":"2019-08-13T17:43:17Z"}
-{"level":"info","msg":"created PipelineStructure jtmoss-go-demo-6-master-1","time":"2019-08-13T17:43:17Z"}
+[36mINFO[0m[0000] No base image, nothing to extract            
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
+[36mINFO[0m[0000] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0000] Taking snapshot of full filesystem...        
+[36mINFO[0m[0000] EXPOSE 8080                                  
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0000] ENTRYPOINT ["/go-demo-6"]                    
+[36mINFO[0m[0000] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
+[36mINFO[0m[0000] COPY ./bin/ /                                
+[36mINFO[0m[0000] Taking snapshot of files...                  
+ERROR: logging before flag.Parse: E0813 19:56:02.686914      12 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+ERROR: logging before flag.Parse: E0813 19:56:02.691866      12 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+2019/08/13 19:56:02 pushed blob: sha256:88aa7075fd7f4dc146cf9e4c196c53e95b610d6bbfc60d23a0a193d4ba0d01e1
+2019/08/13 19:56:03 pushed blob: sha256:0bf33e4de88d6b7b564a41f029031d3c4b3d4f3a2428b70114ebb7633dad68a8
+2019/08/13 19:56:03 10.27.252.45:5000/******/go-demo-6:1.0.343: digest: sha256:aba18a882859bde658e5adf20d8d15332eb01d4f108034905e485eeb9b9b6b24 size: 428
+Step: step-build-post-build:
+
+no CVE provider running in the current ****** namespace so skip adding image to be analysed
+Step: step-promote-changelog:
+
+Converted /workspace/source/charts/go-demo-6 to an unshallow repository
+Generating change log from git ref edf188809a33b167fc373f9e7afba47ad2ad697d => 378a311ee5175c2653105f203cb8653570e39813
+Associating user x-0 in users.jenkins.io with email jmoss@viasat.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 46d69af67c0c0c8d666692562e5e33f026d24c33 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Finding issues in commit messages using git format
+WARNING: No release found for ******/go-demo-6 and tag v1.0.343 so creating a new release
+Updated the release information at https://github.com/******/go-demo-6/releases/tag/v1.0.343
+generated: /workspace/source/charts/go-demo-6/templates/release.yaml
+Created Release go-demo-6-1-0-343 resource in namespace ******
+Updating PipelineActivity ******-go-demo-6-master-1 with version 1.0.343
+Updated PipelineActivities ******-go-demo-6-master-1 with release notes URL: https://github.com/******/go-demo-6/releases/tag/v1.0.343
+Step: step-promote-helm-release:
+
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Uploading chart file go-demo-6-1.0.343.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Received 201 response: {"saved":true}
+Step: step-promote-jx-promote:
+
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/jx/issues/2410
+Promoting app go-demo-6 version 1.0.343 to namespace ******-staging
+Created Pull Request: https://github.com/******/environment-******-staging/pull/1
+Added label  to Pull Request https://github.com/******/environment-******-staging/pull/1
+Pull Request https://github.com/******/environment-******-staging/pull/1 is merged at sha 7fdb507021744cdf773d01ab22123b116535c66e
+Pull Request merged but we are not waiting for the update pipeline to complete!
+WARNING: Could not find the service URL in namespace ******-staging for names go-demo-6, ******-go-demo-6, ******-staging-go-demo-6
