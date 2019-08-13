@@ -1,17 +1,17 @@
-Step: step-credential-initializer-4str2:
+Step: step-credential-initializer-zfzj2:
 
-{"level":"warn","ts":1565718678.6616359,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1565718678.6629915,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
-Step: step-working-dir-initializer-h75xk:
+{"level":"warn","ts":1565726620.159449,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565726620.1600158,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: step-working-dir-initializer-lnvv9:
 
-{"level":"warn","ts":1565718679.0349472,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1565718679.037928,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/charts/go-demo-6\""}
+{"level":"warn","ts":1565726620.9089105,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1565726620.9108555,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/charts/go-demo-6\""}
 Step: step-place-tools:
 
-Step: step-git-source-jtmoss-go-demo-6-master-pdjmc:
+Step: step-git-source-******-go-demo-6-master-release-wzgxm:
 
-{"level":"warn","ts":1565718685.2397664,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1565718685.689391,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jtmoss/go-demo-6.git @ v1.0.339 in path /workspace/source"}
+{"level":"warn","ts":1565726627.0073032,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565726627.4060106,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/******/go-demo-6.git @ v1.0.344 in path /workspace/source"}
 Step: step-git-merge:
 
 WARNING: no SHAs to merge, falling back to initial cloned commit
@@ -20,33 +20,33 @@ Step: step-setup-jx-git-credentials:
 Generated Git credentials file /workspace/xdg_config/git/credentials
 Step: step-build-make-build:
 
-go: finding github.com/matttproud/golang_protobuf_extensions v1.0.1
+go: finding github.com/stretchr/testify v1.2.2
 go: finding github.com/pmezard/go-difflib v1.0.0
 go: finding github.com/golang/protobuf v1.2.0
-go: finding github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
-go: finding github.com/stretchr/testify v1.2.2
-go: finding github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910
+go: finding github.com/matttproud/golang_protobuf_extensions v1.0.1
 go: finding github.com/prometheus/client_golang v0.9.2
-go: finding github.com/prometheus/common v0.0.0-20181126121408-4724e9255275
-go: finding github.com/davecgh/go-spew v1.1.1
-go: finding gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
-go: finding github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
 go: finding github.com/stretchr/objx v0.1.1
-go: finding golang.org/x/sync v0.0.0-20181108010431-42b317875d0f
+go: finding github.com/davecgh/go-spew v1.1.1
+go: finding github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910
+go: finding github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
+go: finding gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
+go: finding github.com/prometheus/common v0.0.0-20181126121408-4724e9255275
+go: finding github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
 go: finding golang.org/x/net v0.0.0-20181201002055-351d144fa1fc
+go: finding golang.org/x/sync v0.0.0-20181108010431-42b317875d0f
 go: downloading github.com/prometheus/client_golang v0.9.2
 go: downloading gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
 go: extracting github.com/prometheus/client_golang v0.9.2
-go: downloading github.com/golang/protobuf v1.2.0
-go: downloading github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
-go: downloading github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
 go: downloading github.com/prometheus/common v0.0.0-20181126121408-4724e9255275
 go: downloading github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910
+go: downloading github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
+go: downloading github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
+go: downloading github.com/golang/protobuf v1.2.0
 go: extracting github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
-go: extracting gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
 go: extracting github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910
-go: extracting github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
+go: extracting gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
 go: extracting github.com/prometheus/common v0.0.0-20181126121408-4724e9255275
+go: extracting github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
 go: downloading github.com/matttproud/golang_protobuf_extensions v1.0.1
 go: extracting github.com/matttproud/golang_protobuf_extensions v1.0.1
 go: extracting github.com/golang/protobuf v1.2.0
@@ -68,24 +68,24 @@ Step: step-build-container-build:
 [36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
 [36mINFO[0m[0000] COPY ./bin/ /                                
 [36mINFO[0m[0000] Taking snapshot of files...                  
-ERROR: logging before flag.Parse: E0813 17:51:36.420319      12 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
-ERROR: logging before flag.Parse: E0813 17:51:36.427640      12 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
-2019/08/13 17:51:36 pushed blob: sha256:77aaa22153427d010cd7e5f078154c4e16e4d0fac8d095f391e53ddd7f63306e
-2019/08/13 17:51:37 pushed blob: sha256:910f148b1fb14f542aab86ab3ff40f432dc0c413d906836323c3c51565400bde
-2019/08/13 17:51:37 10.27.249.112:5000/jtmoss/go-demo-6:1.0.339: digest: sha256:80d8792809c51bff4fde646216f4ba5754c200d44290612da986deda8f2e3af8 size: 428
+ERROR: logging before flag.Parse: E0813 20:03:58.286404      12 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+ERROR: logging before flag.Parse: E0813 20:03:58.291516      12 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+2019/08/13 20:03:58 pushed blob: sha256:f814842a3349be8ae72ad85183fa0593dafcdb592328087e25eab8a6601e770f
+2019/08/13 20:03:58 pushed blob: sha256:fcaa919d2d49bb562c1df01410a537ac598d095ef66b54c10ef58af0b050bb71
+2019/08/13 20:03:58 10.27.252.45:5000/******/go-demo-6:1.0.344: digest: sha256:d1c8f3113c1c2554d96086a3f0718ddb8d401c0ab5899849deccafad51c3b989 size: 428
 Step: step-build-post-build:
 
-no CVE provider running in the current ********* namespace so skip adding image to be analysed
+no CVE provider running in the current ****** namespace so skip adding image to be analysed
 Step: step-promote-changelog:
 
 Converted /workspace/source/charts/go-demo-6 to an unshallow repository
-Generating change log from git ref ba20e05dcb6a2139d1b665ec08ddba08c4bab092 => 9d26e269dfdd4708b83fdfb0a2f1669f92c10873
-WARNING: No release found for jtmoss/go-demo-6 and tag v1.0.339 so creating a new release
-Updated the release information at https://github.com/jtmoss/go-demo-6/releases/tag/v1.0.339
+Generating change log from git ref 378a311ee5175c2653105f203cb8653570e39813 => d2492ae7d446bf728b778e8ad128c33bf2abf5ab
+WARNING: No release found for ******/go-demo-6 and tag v1.0.344 so creating a new release
+Updated the release information at https://github.com/******/go-demo-6/releases/tag/v1.0.344
 generated: /workspace/source/charts/go-demo-6/templates/release.yaml
-Created Release go-demo-6-1-0-339 resource in namespace *********
-Updating PipelineActivity jtmoss-go-demo-6-master-2 with version 1.0.339
-Updated PipelineActivities jtmoss-go-demo-6-master-2 with release notes URL: https://github.com/jtmoss/go-demo-6/releases/tag/v1.0.339
+Created Release go-demo-6-1-0-344 resource in namespace ******
+Updating PipelineActivity ******-go-demo-6-master-2 with version 1.0.344
+Updated PipelineActivities ******-go-demo-6-master-2 with release notes URL: https://github.com/******/go-demo-6/releases/tag/v1.0.344
 Step: step-promote-helm-release:
 
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
@@ -94,11 +94,14 @@ Successfully added Helm repository storage.googleapis.com.
 Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
 Successfully added Helm repository jenkins-x-chartmuseum.
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Uploading chart file go-demo-6-1.0.339.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Uploading chart file go-demo-6-1.0.344.tgz to http://jenkins-x-chartmuseum:8080/api/charts
 Received 201 response: {"saved":true}
 Step: step-promote-jx-promote:
 
 WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/jx/issues/2410
-Promoting app go-demo-6 version 1.0.339 to namespace *********-staging
-WARNING: Waiting for the fork of *****/environment-*********-staging to appear...
-error: pulling environment repo https://github.com/jtmoss/environment-*********-staging.git into /builder/home/.jx/environments: failed to fork GitHub repo jtmoss/environment-*********-staging to user *****: gave up waiting for Repository *****/environment-*********-staging to appear: GET https://api.github.com/repos/*****/environment-*********-staging: 404 Not Found []
+Promoting app go-demo-6 version 1.0.344 to namespace ******-staging
+Created Pull Request: https://github.com/******/environment-******-staging/pull/2
+Added label  to Pull Request https://github.com/******/environment-******-staging/pull/2
+Pull Request https://github.com/******/environment-******-staging/pull/2 is merged at sha c88522c79c805f95772208509d2e1d42b36e2f8a
+Pull Request merged but we are not waiting for the update pipeline to complete!
