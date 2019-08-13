@@ -1,0 +1,41 @@
+Step: step-credential-initializer-lt76n:
+
+{"level":"warn","ts":1565726120.1801958,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565726120.180676,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: step-working-dir-initializer-fhjb4:
+
+{"level":"warn","ts":1565726120.4228938,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1565726120.4243906,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+Step: step-place-tools:
+
+Step: step-git-source-meta-jtmoss-go-demo-6-master-re-pgmnr:
+
+{"level":"warn","ts":1565726132.539618,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565726132.9452982,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jtmoss/go-demo-6.git @ 46d69af67c0c0c8d666692562e5e33f026d24c33 in path /workspace/source"}
+Step: step-git-merge:
+
+{"level":"info","msg":"Using SHAs from PULL_REFS=master:46d69af67c0c0c8d666692562e5e33f026d24c33","time":"2019-08-13T19:55:33Z"}
+{"level":"warning","msg":"no SHAs to merge, falling back to initial cloned commit","time":"2019-08-13T19:55:33Z"}
+Step: step-merge-pull-refs:
+
+SKIP merge-pull-refs: Nothing to merge
+Step: step-create-effective-pipeline:
+
+{"level":"info","msg":"Deleting and cloning the Jenkins X versions repo","time":"2019-08-13T19:55:34Z"}
+{"level":"info","msg":"Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.jx/jenkins-x-versions","time":"2019-08-13T19:55:34Z"}
+{"level":"info","msg":"Effective pipeline written to jenkins-x-release-effective.yml","time":"2019-08-13T19:55:36Z"}
+Step: step-create-tekton-crds:
+
+{"level":"info","msg":"running command: echo \\$(jx-release-version) \u003e VERSION","time":"2019-08-13T19:55:37Z"}
+{"level":"info","msg":"","time":"2019-08-13T19:55:39Z"}
+{"level":"info","msg":"running command: jx step tag --version \\$(cat VERSION)","time":"2019-08-13T19:55:39Z"}
+{"level":"info","msg":"Updating chart version in charts/go-demo-6/Chart.yaml to 1.0.343","time":"2019-08-13T19:55:39Z"}
+{"level":"info","msg":"Updating repository in charts/go-demo-6/values.yaml to 10.27.249.112:5000/jtmoss/go-demo-6","time":"2019-08-13T19:55:39Z"}
+{"level":"info","msg":"Updating tag in charts/go-demo-6/values.yaml to 1.0.343","time":"2019-08-13T19:55:39Z"}
+error: Have you set up a git credential helper? See https://help.github.com/articles/caching-your-github-password-in-git/
+: git output: To https://github.com/jtmoss/go-demo-6.git
+ ! [remote rejected] v1.0.343 -> v1.0.343 (cannot lock ref 'refs/tags/v1.0.343': reference already exists)
+error: failed to push some refs to 'https://github.com/jtmoss/go-demo-6.git': failed to run 'git push origin v1.0.343' command in directory '', output: 'To https://github.com/jtmoss/go-demo-6.git
+ ! [remote rejected] v1.0.343 -> v1.0.343 (cannot lock ref 'refs/tags/v1.0.343': reference already exists)
+error: failed to push some refs to 'https://github.com/jtmoss/go-demo-6.git''
+error: failed to set the version on release pipelines: failed to run '/bin/sh -c jx step tag --version $(cat VERSION)' command in directory '/workspace/source', output: ''
